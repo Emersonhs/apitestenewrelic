@@ -27,7 +27,7 @@ namespace MyWebApp
                 c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
                     {
                         Title = "API de Teste .Net",
-                        Version = "v2",
+                        Version = "v3",
                         Description = "Exemplo de API REST criada com o ASP.NET Core"
                        
                     });
@@ -64,7 +64,7 @@ namespace MyWebApp
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json","Api Teste v2");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json","Api Teste v3");
                 c.RoutePrefix = string.Empty;
             });
         }
