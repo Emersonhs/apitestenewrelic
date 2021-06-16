@@ -1,0 +1,16 @@
+C:\treinamentos\newrelaic\apiteste\publish\MyWebApp.xml
+C:\treinamentos\newrelaic\apiteste\publish\appsettings.Development.json
+C:\treinamentos\newrelaic\apiteste\publish\appsettings.json
+C:\treinamentos\newrelaic\apiteste\publish\MyWebApp.dll
+C:\treinamentos\newrelaic\apiteste\publish\MyWebApp.deps.json
+C:\treinamentos\newrelaic\apiteste\publish\MyWebApp.runtimeconfig.json
+C:\treinamentos\newrelaic\apiteste\publish\MyWebApp.pdb
+C:\treinamentos\newrelaic\apiteste\publish\System.Net.Http.Formatting.dll
+C:\treinamentos\newrelaic\apiteste\publish\System.Web.Http.dll
+C:\treinamentos\newrelaic\apiteste\publish\Microsoft.Extensions.PlatformAbstractions.dll
+C:\treinamentos\newrelaic\apiteste\publish\Microsoft.OpenApi.dll
+C:\treinamentos\newrelaic\apiteste\publish\Newtonsoft.Json.dll
+C:\treinamentos\newrelaic\apiteste\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\treinamentos\newrelaic\apiteste\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\treinamentos\newrelaic\apiteste\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\treinamentos\newrelaic\apiteste\publish\Swashbuckle.Core.dll
