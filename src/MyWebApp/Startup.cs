@@ -24,7 +24,7 @@ namespace MyWebApp
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
+                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
                     {
                         Title = "API de Teste .Net",
                         Version = "v2",
