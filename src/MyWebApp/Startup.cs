@@ -24,10 +24,10 @@ namespace MyWebApp
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+                c.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo
                     {
                         Title = "API de Teste .Net",
-                        Version = "v1",
+                        Version = "v2",
                         Description = "Exemplo de API REST criada com o ASP.NET Core"
                        
                     });
