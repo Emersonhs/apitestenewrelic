@@ -25,7 +25,7 @@ CORECLR_PROFILER={36032161-FFC0-4B61-B559-F6C5D41BAE5A} \
 CORECLR_NEWRELIC_HOME=/usr/local/newrelic-netcore20-agent \
 CORECLR_PROFILER_PATH=/usr/local/newrelic-netcore20-agent/libNewRelicProfiler.so \
 NEW_RELIC_LICENSE_KEY=dfa5c7341670df2f20dd220a47e05a7ecc89NRAL \
-NEW_RELIC_APP_NAME=PositivoTeste
+NEW_RELIC_APP_NAME=positivoteste
 
 WORKDIR /app
 RUN ls

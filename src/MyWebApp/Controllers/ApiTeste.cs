@@ -10,7 +10,7 @@ namespace MyWebApp.Controllers
 {
     [ApiController]
     [Route("api")]
-    public class BancoSemear : ControllerBase
+    public class ApiTeste : ControllerBase
     {
         [HttpGet]
         [Route("healthcheck")]
