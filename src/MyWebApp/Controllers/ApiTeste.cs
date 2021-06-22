@@ -14,9 +14,20 @@ namespace MyWebApp.Controllers
     {
         [HttpGet]
         [Route("healthcheck")]
-        public string Healthcheck()
+        public string Healthcheck(int num)
         {
-            return "API de Teste Funcionando!";
+            try
+            {
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("request", num);
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("response", "OK");
+                return "API de Teste Funcionando!";
+            }
+            catch (Exception)
+            {
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("response", "fail");
+                throw;
+            }
+           
         }      
     }
 }

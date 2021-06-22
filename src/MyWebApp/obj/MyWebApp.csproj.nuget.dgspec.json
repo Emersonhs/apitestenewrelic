@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\treinamentos\\newrelaic\\apiteste\\src\\MyWebApp\\MyWebApp.csproj": {}
+    "C:\\kumulus\\apiteste\\src\\MyWebApp\\MyWebApp.csproj": {}
   },
   "projects": {
-    "C:\\treinamentos\\newrelaic\\apiteste\\src\\MyWebApp\\MyWebApp.csproj": {
+    "C:\\kumulus\\apiteste\\src\\MyWebApp\\MyWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\treinamentos\\newrelaic\\apiteste\\src\\MyWebApp\\MyWebApp.csproj",
+        "projectUniqueName": "C:\\kumulus\\apiteste\\src\\MyWebApp\\MyWebApp.csproj",
         "projectName": "MyWebApp",
-        "projectPath": "C:\\treinamentos\\newrelaic\\apiteste\\src\\MyWebApp\\MyWebApp.csproj",
+        "projectPath": "C:\\kumulus\\apiteste\\src\\MyWebApp\\MyWebApp.csproj",
         "packagesPath": "C:\\Users\\EmersonSilva\\.nuget\\packages\\",
-        "outputPath": "C:\\treinamentos\\newrelaic\\apiteste\\src\\MyWebApp\\obj\\",
+        "outputPath": "C:\\kumulus\\apiteste\\src\\MyWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -46,6 +46,18 @@
             "Microsoft.Extensions.PlatformAbstractions": {
               "target": "Package",
               "version": "[1.1.0, )"
+            },
+            "NewRelic.Agent": {
+              "target": "Package",
+              "version": "[8.40.0, )"
+            },
+            "NewRelic.Agent.Api": {
+              "target": "Package",
+              "version": "[8.40.0, )"
+            },
+            "NewRelicWindowsAzure": {
+              "target": "Package",
+              "version": "[8.40.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
