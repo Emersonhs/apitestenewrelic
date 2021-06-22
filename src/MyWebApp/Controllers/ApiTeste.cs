@@ -20,6 +20,7 @@ namespace MyWebApp.Controllers
             {
                 NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("request", num);
                 NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("response", "OK");
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("response", "123");
                 return "API de Teste Funcionando!";
             }
             catch (Exception)
