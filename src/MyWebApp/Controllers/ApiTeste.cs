@@ -14,12 +14,12 @@ namespace MyWebApp.Controllers
     {
         [HttpGet]
         [Route("healthcheck")]
-        public string Healthcheck(int num)
+        public string Healthcheck(string requisicao, string resposta)
         {
             try
             {
-                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("requisicao", num.ToString());
-                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("resposta", "123");
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("requisicao", requisicao);
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("resposta", resposta);
                 return "API de Teste Funcionando!";
             }
             catch (Exception)
@@ -31,12 +31,12 @@ namespace MyWebApp.Controllers
         }
         [HttpGet]
         [Route("healthcheck2")]
-        public string Healthcheck2(int num)
+        public string Healthcheck2(string requisicao, string resposta)
         {
             try
             {
-                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("requisicao", num.ToString());
-                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("resposta", "OK");
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("requisicao", requisicao);
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("resposta", resposta);
                 return "API de Teste Funcionando!";
             }
             catch (Exception)
