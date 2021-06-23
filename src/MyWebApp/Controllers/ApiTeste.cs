@@ -19,8 +19,6 @@ namespace MyWebApp.Controllers
             try
             {
                 NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("request", num.ToString());
-                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("requisicao", num.ToString());
-                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("resposta", "OK");
                 NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("resposta", "123");
                 return "API de Teste Funcionando!";
             }
@@ -30,6 +28,23 @@ namespace MyWebApp.Controllers
                 throw;
             }
            
-        }      
+        }
+        [HttpGet]
+        [Route("healthcheck2")]
+        public string Healthcheck2(int num)
+        {
+            try
+            {
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("requisicao", num.ToString());
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("resposta", "OK");
+                return "API de Teste Funcionando!";
+            }
+            catch (Exception)
+            {
+                NewRelic.Api.Agent.NewRelic.GetAgent().CurrentTransaction.AddCustomAttribute("resposta", "fail");
+                throw;
+            }
+           
+        }            
     }
 }
